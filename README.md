@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Xavier 👋</h1>
-<h3 align="center">Senior Platform Engineer / SRE — 11 years turning infrastructure into code</h3>
+<h3 align="center">Senior Platform Engineer / SRE — turning infrastructure into code</h3>
 
 <p align="center">
   I build and operate cloud platforms for high-traffic systems: infrastructure as code,
@@ -10,7 +10,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Senior%20Platform%20Engineer-%2F%20SRE-2496ED?style=flat-square" alt="Role" />
-  <img src="https://img.shields.io/badge/11%20years-experience-success?style=flat-square" alt="Experience" />
+  <img src="https://img.shields.io/badge/Reliability-at%20scale-success?style=flat-square" alt="Focus" />
   <img src="https://img.shields.io/badge/Based%20in-Barcelona%20%F0%9F%87%AA%F0%9F%87%B8-orange?style=flat-square" alt="Location" />
 </p>
 
