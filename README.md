@@ -74,12 +74,12 @@
 
 ---
 
-### 🧪 On the side
+### 🧪 Ventures & products
 
-I also build and operate full products end to end — so I stay close to what I automate:
+I also build and operate products end to end — so I stay close to what I automate:
 
-- **[padelAI](https://github.com/xurtasun?tab=repositories&q=padelai)** — a microservices platform for padel tournaments: Express + TypeScript API, React + Vite dashboard, Next.js SSR site, and a RabbitMQ notification worker (email + WhatsApp).
-- **[dualpadel](https://github.com/xurtasun?tab=repositories&q=dualpadel)** — a multi-service SaaS split into API, payments, workers and admin frontends — independently deployable services.
+- **[Smashbase](https://smashbase.io)** — a SaaS I build end to end: a tournament & league management platform for padel clubs (registrations, groups, brackets, AI-optimized scheduling, live results). A real multi-service architecture — API, payments, background workers, and admin + public frontends with async messaging.
+- **[Femutech](https://femutech.com)** — my AWS cloud-optimization consultancy: cutting cloud bills up to 50% through infrastructure optimization, scalability and monitoring.
 
 ---
 
