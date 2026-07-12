@@ -1,82 +1,92 @@
 <h1 align="center">Hi, I'm Xavier 👋</h1>
-<h3 align="center">DevOps / SRE Engineer — I build platforms and keep them reliable</h3>
+<h3 align="center">Senior Platform Engineer / SRE — 11 years turning infrastructure into code</h3>
 
 <p align="center">
-  I design infrastructure as code, ship deterministic CI/CD pipelines, and run
-  distributed systems with real observability and SLO-driven reliability.
-  I also build full products end to end — so I operate what I understand.
+  I build and operate cloud platforms for high-traffic systems: infrastructure as code,
+  GitOps delivery, and reliability at scale. I automate the path from commit to production
+  and keep critical systems reliable, secure and cost-efficient — from architecting
+  platforms out of nothing to driving multi-year migrations to completion.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Role-DevOps%20%2F%20SRE-2496ED?style=flat-square" alt="Role" />
-  <img src="https://img.shields.io/badge/Focus-Reliability%20%26%20Automation-success?style=flat-square" alt="Focus" />
-  <img src="https://img.shields.io/badge/IaC-Declarative%20first-623CE4?style=flat-square" alt="IaC" />
+  <img src="https://img.shields.io/badge/Senior%20Platform%20Engineer-%2F%20SRE-2496ED?style=flat-square" alt="Role" />
+  <img src="https://img.shields.io/badge/11%20years-experience-success?style=flat-square" alt="Experience" />
+  <img src="https://img.shields.io/badge/Based%20in-Barcelona%20%F0%9F%87%AA%F0%9F%87%B8-orange?style=flat-square" alt="Location" />
 </p>
 
 ---
 
 ### 🛠️ What I do
 
-- **Infrastructure as Code** — everything versioned and reproducible; declarative over imperative (Terraform / Terragrunt), remote state with locking, modular for reuse.
-- **CI/CD** — pipelines as code, deterministic builds, safe deployment strategies (blue-green, canary, rolling) with automated rollback.
-- **Observability** — the three pillars (logs, metrics, traces), alerting driven by SLOs rather than arbitrary thresholds, dashboards oriented to user experience.
-- **Reliability** — SLIs / SLOs / error budgets, runbooks, blameless postmortems, chaos engineering to validate resilience.
-- **Security** — least privilege, secrets in dedicated managers, no credentials in code, vulnerability scanning in CI (deps, images, SAST).
+- **Infrastructure as Code** — everything versioned and reproducible; declarative over imperative (Terraform / Terragrunt), remote state with locking, domain-scoped modules with independent CI and semantic-versioned releases.
+- **GitOps & CD** — build reusable delivery platforms on Argo CD (Terraform module + Helm chart, CRD-level RBAC, command-based deploy with rollback) across multiple environments.
+- **Reliability at scale** — SLO-driven alerting and error budgets, runbooks, blameless postmortems; debugging large-scale sync and connector failures deep in the codebase.
+- **Security & compliance** — secrets on HashiCorp Vault (+ VSO), WAF with managed rules, private CDN origins, Falco runtime security, and SOC2 audit evidence.
+- **Cost & platform efficiency** — re-architecting ingestion and CI to cut spend by six figures a year while increasing capacity.
+
+---
+
+### 🚩 Selected work
+
+- **Org-wide GitOps platform across three generations** — designed, migrated and decommissioned each: Atlantis → an in-house successor → **Argo CD**, owning the full lifecycle. Rolled out across 5 environments with Vault-sourced credentials, an ECR OCI token rotator, RBAC and rollback.
+- **Data-ingestion migration (Fivetran → Airbyte)** — designed and deployed a production ingestion platform on Kubernetes / Terraform / Helm handling **2 TB+ datasets**, cutting cost by **~$200K/year**.
+- **Security & compliance hardening** — Vault + VSO secrets across all services, reusable WAF module, CloudFront public→private origin migration, Falco runtime security, and **SOC2 Type 1** evidence.
+- **Self-service Internal Developer Platform (Next.js)** — a portal letting the data team provision/tear down database replicas via automatically generated infrastructure PRs, with Slack + Datadog integration — removing SRE from the loop.
+- **CI/CD scaling** — migrated all GitHub Actions workflows from EC2 to Kubernetes runners on a purpose-built EKS cluster, scaling capacity for large parallel workloads.
 
 ---
 
 ### 🧰 Tech & tooling
 
-**Cloud**
+**Cloud & containers**
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![EKS](https://img.shields.io/badge/EKS-FF9900?style=flat-square&logo=amazoneks&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white)
 
-**Infrastructure as Code**
+**IaC & GitOps / CI/CD**
 ![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=flat-square&logo=terraform&logoColor=white)
 ![Terragrunt](https://img.shields.io/badge/Terragrunt-2AA1FF?style=flat-square)
-
-**Containers & orchestration**
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white)
 ![Argo CD](https://img.shields.io/badge/Argo%20CD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
-
-**CI/CD**
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![GitLab CI](https://img.shields.io/badge/GitLab%20CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
+![Renovate](https://img.shields.io/badge/Renovate-1A1F6C?style=flat-square&logo=renovatebot&logoColor=white)
 
-**Observability**
+**Security & observability**
+![Vault](https://img.shields.io/badge/Vault-000000?style=flat-square&logo=vault&logoColor=white)
+![Falco](https://img.shields.io/badge/Falco-00AEC7?style=flat-square&logo=falco&logoColor=white)
 ![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=flat-square&logo=datadog&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 
-**Languages**
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-
-**Data**
+**Data & stores**
+![Airbyte](https://img.shields.io/badge/Airbyte-615EFF?style=flat-square&logo=airbyte&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white)
+
+**Languages**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
 ---
 
-### 🚀 Featured projects
+### 🧪 On the side
 
-I build multi-service platforms end to end — architecture, delivery, and operations.
+I also build and operate full products end to end — so I stay close to what I automate:
 
-- **[padelAI](https://github.com/xurtasun?tab=repositories&q=padelai)** — a microservices platform for padel tournaments: an Express + TypeScript API, a React + Vite admin dashboard, a Next.js SSR public site, and a RabbitMQ notification worker (email via Resend + WhatsApp). A real distributed system with async messaging and containerized services.
-- **[dualpadel](https://github.com/xurtasun?tab=repositories&q=dualpadel)** — a multi-service SaaS split into API, payments, background workers, and management/admin frontends — separation of concerns across independently deployable services.
-- **GitOps & homelab** — experimenting with [Argo CD](https://github.com/xurtasun/argocd-testing) for declarative continuous delivery, plus scripting and automation on Raspberry Pi.
-
-> More infrastructure-focused showcase repos (modular Terraform, a full CI/CD demo with canary + rollback, and an SLO-based observability stack) are on the way.
+- **[padelAI](https://github.com/xurtasun?tab=repositories&q=padelai)** — a microservices platform for padel tournaments: Express + TypeScript API, React + Vite dashboard, Next.js SSR site, and a RabbitMQ notification worker (email + WhatsApp).
+- **[dualpadel](https://github.com/xurtasun?tab=repositories&q=dualpadel)** — a multi-service SaaS split into API, payments, workers and admin frontends — independently deployable services.
 
 ---
 
 ### 📈 Currently
 
-- Deepening Kubernetes operations and GitOps delivery with Argo CD.
-- Sharpening SLO-driven alerting and error-budget practice.
-- Bringing production-grade IaC and observability patterns into my public projects.
+- Driving GitOps delivery with Argo CD and sharpening SLO-based alerting and error-budget practice.
+- Bringing production-grade IaC, security and observability patterns into my public work.
 
 ---
 
