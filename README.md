@@ -1,11 +1,12 @@
 <h1 align="center">Hi, I'm Xavier 👋</h1>
-<h3 align="center">Senior Platform Engineer / SRE — turning infrastructure into code</h3>
+<h3 align="center">Senior Platform Engineer / SRE, based in Barcelona</h3>
 
 <p align="center">
-  I build and operate cloud platforms for high-traffic systems: infrastructure as code,
-  GitOps delivery, and reliability at scale. I automate the path from commit to production
-  and keep critical systems reliable, secure and cost-efficient — from architecting
-  platforms out of nothing to driving multi-year migrations to completion.
+  I build the platforms other engineers ship on, and I keep them running. Most of my work
+  lives in that space between "it works on my machine" and a system a whole org depends on:
+  infrastructure as code, GitOps pipelines, secrets, observability, and the unglamorous
+  migrations nobody wants to touch. I enjoy starting a platform from an empty AWS account
+  just as much as untangling a legacy one.
 </p>
 
 <p align="center">
@@ -16,27 +17,27 @@
 
 ---
 
-### 🛠️ What I do
+### 🛠️ What I work on
 
-- **Infrastructure as Code** — everything versioned and reproducible; declarative over imperative (Terraform / Terragrunt), remote state with locking, domain-scoped modules with independent CI and semantic-versioned releases.
-- **GitOps & CD** — build reusable delivery platforms on Argo CD (Terraform module + Helm chart, CRD-level RBAC, command-based deploy with rollback) across multiple environments.
-- **Reliability at scale** — SLO-driven alerting and error budgets, runbooks, blameless postmortems; debugging large-scale sync and connector failures deep in the codebase.
-- **Security & compliance** — secrets on HashiCorp Vault (+ VSO), WAF with managed rules, private CDN origins, Falco runtime security, and SOC2 audit evidence.
-- **Cost & platform efficiency** — re-architecting ingestion and CI to cut spend by six figures a year while increasing capacity.
-
----
-
-### 🚩 Selected work
-
-- **Org-wide GitOps platform across three generations** — designed, migrated and decommissioned each: Atlantis → an in-house successor → **Argo CD**, owning the full lifecycle. Rolled out across 5 environments with Vault-sourced credentials, an ECR OCI token rotator, RBAC and rollback.
-- **Data-ingestion migration (Fivetran → Airbyte)** — designed and deployed a production ingestion platform on Kubernetes / Terraform / Helm handling **2 TB+ datasets**, cutting cost by **~$200K/year**.
-- **Security & compliance hardening** — Vault + VSO secrets across all services, reusable WAF module, CloudFront public→private origin migration, Falco runtime security, and **SOC2 Type 1** evidence.
-- **Self-service Internal Developer Platform (Next.js)** — a portal letting the data team provision/tear down database replicas via automatically generated infrastructure PRs, with Slack + Datadog integration — removing SRE from the loop.
-- **CI/CD scaling** — migrated all GitHub Actions workflows from EC2 to Kubernetes runners on a purpose-built EKS cluster, scaling capacity for large parallel workloads.
+- **Infrastructure as code.** Terraform and Terragrunt, remote state, domain-scoped modules with their own CI and versioned releases. If it isn't reproducible, it isn't done.
+- **GitOps and delivery.** Reusable Argo CD setups (a Terraform module plus a Helm chart, RBAC, deploy-with-rollback) rolled out across every environment.
+- **Reliability.** SLO-based alerting instead of arbitrary thresholds, error budgets, runbooks, and the occasional deep dive into a sync failure that's hiding three layers down.
+- **Security and compliance.** Vault and the Vault Secrets Operator, WAF rules, private CDN origins, Falco, and enough evidence to get through a SOC2 audit.
+- **Cost.** Re-architecting the expensive parts (ingestion, CI) so they cost less and do more.
 
 ---
 
-### 🧰 Tech & tooling
+### 🚩 Some things I've built
+
+- **A GitOps platform, rebuilt three times.** Atlantis first, then an in-house replacement, now Argo CD — I built each one, migrated to it, and tore down the last. Five environments, Vault-sourced credentials, an ECR token rotator to work around the 12h OCI expiry, RBAC, rollback.
+- **Fivetran → Airbyte.** Stood up our own ingestion platform on Kubernetes, Terraform and Helm to take back control of the data pipeline. It handles 2 TB+ datasets and knocked about **$200K/year** off the bill.
+- **Security hardening.** Moved every service onto Vault + VSO, wrote a reusable WAF module, migrated CloudFront to private S3 origins, deployed Falco, and put together the evidence for **SOC2 Type 1**.
+- **An internal developer platform.** A Next.js portal that lets the data team spin database replicas up and down through auto-generated infra PRs, with Slack and Datadog wired in — so nobody has to ping an SRE for it.
+- **CI on Kubernetes.** Moved all our GitHub Actions off EC2 runners onto a dedicated EKS cluster so large parallel builds stopped being a bottleneck.
+
+---
+
+### 🧰 Tech I reach for
 
 **Cloud & containers**
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
@@ -74,27 +75,24 @@
 
 ---
 
-### 🧪 Ventures & products
+### 🧪 On the side
 
-I also build and operate products end to end — so I stay close to what I automate:
+A couple of things I run outside of work:
 
-- **[Smashbase](https://smashbase.io)** — a SaaS I build end to end: a tournament & league management platform for padel clubs (registrations, groups, brackets, AI-optimized scheduling, live results). A real multi-service architecture — API, payments, background workers, and admin + public frontends with async messaging.
-- **[Femutech](https://femutech.com)** — my AWS cloud-optimization consultancy: cutting cloud bills up to 50% through infrastructure optimization, scalability and monitoring.
-
----
-
-### 📈 Currently
-
-- Driving GitOps delivery with Argo CD and sharpening SLO-based alerting and error-budget practice.
-- Bringing production-grade IaC, security and observability patterns into my public work.
+- **[Smashbase](https://smashbase.io)** — a SaaS for running padel tournaments and leagues: registrations, groups, brackets, AI-assisted scheduling and live results. It's a proper multi-service app (API, payments, background workers, and both an admin and a public frontend) and I own all of it.
+- **[Femutech](https://femutech.com)** — my AWS consultancy, focused on trimming cloud bills (usually up to ~50%) without hurting performance. It's the day job turned into a service.
 
 ---
 
-### 📫 Get in touch
+### 📈 Right now
+
+Mostly Argo CD and GitOps at the moment, plus tightening up our SLOs and error-budget process. On the side I'm pulling the same production habits — IaC, secrets, observability — into my own projects.
+
+---
+
+### 📫 Say hi
 
 <p align="left">
   <a href="mailto:info@xurtasun.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://www.linkedin.com/in/xurtasun"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
-
-<sub><i>Declarative over imperative. Least privilege by default. Automate the toil, alert on the symptom.</i></sub>
